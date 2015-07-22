@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class RegisterController {
 
 	@RequestMapping(value = "register", method = RequestMethod.GET)
-	public String registerControll(HttpServletRequest request, HttpServletResponse response) {
+	public String registerUser(HttpServletRequest request, HttpServletResponse response) {
 
 		return "studentRegistration";
 	}
