@@ -1,14 +1,12 @@
 package com.sachin.controller;
 
-import java.util.Enumeration;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.sachin.dao.LoginCredentials;
+import com.sachin.general.HtmlRep;
 
 @Controller
 public class LoginController {
@@ -20,17 +18,11 @@ public class LoginController {
 		return "index";
 	}
 
-	@RequestMapping(value = "/login", method = RequestMethod.GET)
-	public String checkLogin(HttpServletRequest request, HttpServletResponse response) {
+	@RequestMapping(value = "/" + HtmlRep.HOME_HTML, method = RequestMethod.POST)
+	public String checkLogin(Model model, LoginCredentials loginCredentials) {
 
-		Enumeration<String> enumVal = request.getAttributeNames();
 
-		if (enumVal != null)
-			while (enumVal.hasMoreElements()) {
-				System.err.println(enumVal.nextElement());
-			}
-		System.err.println(request.getAttribute("username"));
-		System.err.println(request.getAttribute("password"));
+		System.out.println(loginCredentials);
 
 		return "studentDetails";
 	}

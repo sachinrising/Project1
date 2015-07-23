@@ -11,7 +11,7 @@
 		
 		<!-- bootstrap & fontawesome -->
 		<link rel="stylesheet"
-			href="<c:url value="/resources/css/bootstrap.min.css" />" />
+			href="<c:url value="/resources/css/bootstrap.min.css"/>" />
 		<link rel="stylesheet"
 			href="<c:url value ="/resources/css/font-awesome.min.css"/>" />
 		
@@ -57,7 +57,7 @@
 
 											<div class="space-6"></div>
 
-											<form action="login" method="get">
+											<form action="home.html" method="post">
 												<fieldset>
 													<label class="block clearfix">
 														<span class="block input-icon input-icon-right">

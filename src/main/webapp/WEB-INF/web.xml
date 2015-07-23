@@ -23,7 +23,9 @@
 	<!-- needed for ContextLoaderListener -->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>\WEB-INF\context-config.xml</param-value>
+		<param-value>
+		classpath:com/sachin/config/dao-content.xml</param-value>
+	<!--  <param-value>\WEB-INF\context-config.xml</param-value> -->
 	</context-param>
 
 	<!-- Bootstraps the root web application context before servlet initialization -->

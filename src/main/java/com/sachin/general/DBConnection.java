@@ -1,4 +1,4 @@
-package com.sachin.model;
+package com.sachin.general;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
