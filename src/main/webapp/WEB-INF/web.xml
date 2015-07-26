@@ -24,7 +24,9 @@
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>
-		classpath:com/sachin/config/dao-content.xml</param-value>
+		classpath:com/sachin/config/dao-content.xml
+		classpath:com/sachin/config/service-content.xml
+		</param-value>
 	<!--  <param-value>\WEB-INF\context-config.xml</param-value> -->
 	</context-param>
 

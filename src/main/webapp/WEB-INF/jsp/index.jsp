@@ -1,4 +1,6 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -57,7 +59,7 @@
 
 											<div class="space-6"></div>
 
-											<form action="home.html" method="post">
+											<form action="${pageContext.request.contextPath}/home.html" method="post" >
 												<fieldset>
 													<label class="block clearfix">
 														<span class="block input-icon input-icon-right">
@@ -163,7 +165,7 @@
 											<div class="space-6"></div>
 											<p> Enter your details to begin: </p>
 
-											<form action="register" method="get">
+											<form action="register" method="post">
 												<fieldset>
 													<label class="block clearfix">
 														<span class="block input-icon input-icon-right">

@@ -13,17 +13,26 @@ public class LoginController {
 
 	@RequestMapping("/")
 	public String sayHello(Model model) {
-		model.addAttribute("greeting", "Are mere yaaron");
+		model.addAttribute("loginCredentials", new LoginCredentials());
 
 		return "index";
 	}
 
+	@RequestMapping(value = "/" + HtmlRep.HOME_HTML, method = RequestMethod.GET)
+	public String loadFromLogin(Model model) {
+
+		model.addAttribute("loginCredentials", new LoginCredentials());
+		return "studentDetails";
+	}
+
 	@RequestMapping(value = "/" + HtmlRep.HOME_HTML, method = RequestMethod.POST)
-	public String checkLogin(Model model, LoginCredentials loginCredentials) {
-
-
-		System.out.println(loginCredentials);
+	public String checkLogin(Model model) {
 
 		return "studentDetails";
+	}
+	
+	@RequestMapping(value = "/studentRegistration")
+	public String getStudentRegistration () {
+		return "studentRegistration";
 	}
 }

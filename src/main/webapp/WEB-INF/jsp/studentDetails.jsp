@@ -125,7 +125,7 @@
 						<b class="arrow"></b>
 					</li>
 					<li class="">
-						<a href="studentRegistration.jsp">
+						<a href="studentRegistration">
 							<i class="menu-icon fa fa-list-alt"></i>
 							<span class="menu-text">Student Registration </span>
 						</a>

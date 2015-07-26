@@ -10,6 +10,7 @@
 		<config>src/main/webapp/WEB-INF/spring-maven-servlet.xml</config>
 		<config>src/main/webapp/WEB-INF/context-config.xml</config>
 		<config>src/main/java/com/sachin/config/dao-content.xml</config>
+		<config>src/main/java/com/sachin/config/service-content.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
